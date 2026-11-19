@@ -1,0 +1,24 @@
+{
+  "best_epoch": 10,
+  "best_val_rmse_2d": 1.0808517932891846,
+  "num_sentences": 2695,
+  "num_aspect_samples": 5097,
+  "num_train_aspect_samples": 4330,
+  "num_val_aspect_samples": 767,
+  "seed": 42,
+  "model_name": "vinai/phobert-base-v2",
+  "max_length": 160,
+  "training_method": "LoRA",
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.1,
+    "target_modules": "query,value"
+  },
+  "preprocessing": {
+    "normalize_abbreviations": true,
+    "normalize_emoji": true,
+    "normalize_repeated_chars": false,
+    "lowercase": true
+  }
+}

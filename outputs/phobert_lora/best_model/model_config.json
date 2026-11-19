@@ -1,0 +1,12 @@
+{
+  "model_name": "vinai/phobert-base-v2",
+  "max_length": 160,
+  "dropout": 0.2,
+  "training_method": "LoRA",
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "lora_target_modules": "query,value",
+  "best_epoch": 10,
+  "best_val_rmse_2d": 1.0808517932891846
+}
